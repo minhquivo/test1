@@ -1,0 +1,95 @@
+/*page style*/
+@font-face {
+  font-family: 'Poiret One';
+  src: url('../fonts/PoiretOne-Regular.ttf') format('opentype');
+}
+
+body {
+  background: #00ff87;
+  background: linear-gradient(-45deg, #00d0ff, #00ff87);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Arial';
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html  {
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.screenreader {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
+/*card style*/
+@media only screen and (max-height: 530px) and (max-width: 920px), (max-height: 640px) and (max-width: 360px) {
+  .card {
+    margin: 0 !important;
+    overflow-y: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+#round-counter {
+  margin-bottom: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+}
+.card canvas {
+  margin: 0;
+  padding: 0;
+}
+.card input[type='range'] {
+  width: 50%;
+}
+.card small {
+  font-family: 'Arial';
+  font-size: 0.6em;
+}
+.card {
+  background: rgba(200,200,200,0.3);
+  box-shadow: 0 4px 8px #444;
+  color: #fff;
+  font-family: 'Poiret One', cursive, 'Arial';
+  font-size: 1.4em; 
+  text-align: center;
+  display: block;
+  border-radius: 3px;
+  max-width: 96vw;
+  width: 300px;
+  margin: 1em;
+}
+.flex-input-box {
+  display:flex;
+  justify-content: space-between;
+}
+.timer-setting-box {
+  margin: 0 1em 1em 1em;
+}
